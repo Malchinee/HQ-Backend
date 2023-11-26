@@ -3,9 +3,9 @@ package ping
 import (
 	"net/http"
 
-	"HQ-Backend/api/internal/logic/ping"
-	"HQ-Backend/api/internal/svc"
-	"HQ-Backend/api/internal/types"
+	"github.com/Malchinee/HQ-Backend/api/internal/logic/ping"
+	"github.com/Malchinee/HQ-Backend/api/internal/svc"
+	"github.com/Malchinee/HQ-Backend/api/internal/types"
 	"github.com/zeromicro/go-zero/rest/httpx"
 )
 

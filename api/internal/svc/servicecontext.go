@@ -1,7 +1,7 @@
 package svc
 
 import (
-	"HQ-Backend/api/internal/config"
+	"github.com/Malchinee/HQ-Backend/api/internal/config"
 )
 
 type ServiceContext struct {

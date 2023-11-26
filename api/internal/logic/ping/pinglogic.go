@@ -3,8 +3,8 @@ package ping
 import (
 	"context"
 
-	"HQ-Backend/api/internal/svc"
-	"HQ-Backend/api/internal/types"
+	"github.com/Malchinee/HQ-Backend/api/internal/svc"
+	"github.com/Malchinee/HQ-Backend/api/internal/types"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

@@ -4,8 +4,8 @@ package handler
 import (
 	"net/http"
 
-	ping "HQ-Backend/api/internal/handler/ping"
-	"HQ-Backend/api/internal/svc"
+	ping "github.com/Malchinee/HQ-Backend/api/internal/handler/ping"
+	"github.com/Malchinee/HQ-Backend/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/rest"
 )

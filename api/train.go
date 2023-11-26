@@ -1,21 +1,18 @@
-package main
+package api
 
 import (
-	"HQ-Backend/common"
-	"flag"
 	"fmt"
+	"github.com/Malchinee/HQ-Backend/common"
 
-	"HQ-Backend/api/internal/config"
-	"HQ-Backend/api/internal/handler"
-	"HQ-Backend/api/internal/svc"
+	"github.com/Malchinee/HQ-Backend/api/internal/config"
+	"github.com/Malchinee/HQ-Backend/api/internal/handler"
+	"github.com/Malchinee/HQ-Backend/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"
 )
 
-func main() {
-	flag.Parse()
-
+func InitTrainApiServer() *rest.Server {
 	var c config.Config
 	conf.MustLoad(common.ConfigFile, &c)
 
@@ -26,5 +23,6 @@ func main() {
 	handler.RegisterHandlers(server, ctx)
 
 	fmt.Printf("Starting server at %s:%d...\n", c.HTTP.Host, c.HTTP.Port)
-	server.Start()
+
+	return server
 }

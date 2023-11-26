@@ -1,8 +1,13 @@
-module HQ-Backend
+module github.com/Malchinee/HQ-Backend
 
 go 1.20
 
-require github.com/zeromicro/go-zero v1.6.0
+require (
+	github.com/sirupsen/logrus v1.9.3
+	github.com/zeromicro/go-zero v1.6.0
+	gorm.io/driver/mysql v1.5.2
+	gorm.io/gorm v1.25.5
+)
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -27,7 +32,6 @@ require (
 	github.com/prometheus/client_model v0.4.1-0.20230718164431-9a2bf3000d16 // indirect
 	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.11.1 // indirect
-	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	go.opentelemetry.io/otel v1.19.0 // indirect
 	go.opentelemetry.io/otel/exporters/jaeger v1.17.0 // indirect
@@ -49,6 +53,4 @@ require (
 	google.golang.org/grpc v1.59.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	gorm.io/driver/mysql v1.5.2 // indirect
-	gorm.io/gorm v1.25.5 // indirect
 )

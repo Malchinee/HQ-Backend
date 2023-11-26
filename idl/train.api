@@ -1,0 +1,21 @@
+syntax = "v1"
+
+type BaseResp {
+	Code int32  `json:"code"`
+	Msg  string `json:"msg"`
+}
+
+type PingReq {
+}
+
+type PingResp {
+}
+
+@server (
+	group: ping
+	prefix: /v1
+)
+service train {
+	@handler ping
+	post /ping (PingReq) returns (PingResp)
+}

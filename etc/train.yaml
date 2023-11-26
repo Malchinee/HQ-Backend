@@ -1,0 +1,11 @@
+HTTP:
+  Name: train
+  Host: 127.0.0.1
+  Port: 8888
+ApiAuth:
+  AccessSecret: "cec54f6fc43c8a2a1d30d85f7d6c54ef" # only for test
+  AccessExpire: 86400
+DB:
+  DSN: "root:3fd3e957a1d8c15c5fd36482e54cdda6@tcp(127.0.0.1:3306)/train?charset=utf8mb4&parseTime=True&loc=Local"
+  Type: "mysql"
+

@@ -1,0 +1,23 @@
+version: '3'
+services:
+  mysql:
+    restart: always
+    privileged: true
+    image: mysql:8.0
+    container_name: mysqlServer3307
+    volumes:
+      - ./mysql/db:/var/lib/mysql
+      - ./mysql/conf:/etc/mysql/conf.d
+      - ./mysql/logs:/logs
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+    environment:
+      MYSQL_ROOT_PASSWORD: "3fd3e957a1d8c15c5fd36482e54cdda6"
+      MYSQL_USER: "train"
+      MYSQL_PASSWORD: "train"
+      MYSQL_INITDB_SKIP_TZINFO: "Asia/Shanghai"
+    ports:
+      - 3307:3306
+    network_mode: "bridge"
